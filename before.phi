@@ -1,4 +1,4 @@
 def ch 5
 
-fn main []
+defn main []
   print "Hello world channel=${ch}"
