@@ -1,0 +1,9 @@
+phi {
+ chars [char+] = ‛«char»’
+ char_macro [phrase] = ‛«phrase»’
+ char_other [go] = ‛«go»’
+ PhiPhrase_Macro [_def id integer] = ‛\n«id» := «integer»\n’
+ integer [digit+] = ‛«digit»’
+ id [letter idrest*] = ‛«letter»«idrest»’
+ idrest [go] = ‛«go»’
+}
