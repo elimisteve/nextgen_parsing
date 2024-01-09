@@ -1,0 +1,4 @@
+def ch 5
+
+fn main []
+  print "Hello world channel=${ch}"
