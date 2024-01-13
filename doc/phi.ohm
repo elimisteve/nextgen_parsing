@@ -1,0 +1,10 @@
+phi {
+  chars = char+
+  char =
+    | applySyntactic<PhiPhrase_Macro> -- macro
+    | any -- other
+  PhiPhrase_Macro = "def" id integer
+  integer = digit+
+  id = letter idrest*
+  idrest = letter | digit | "_"
+}
