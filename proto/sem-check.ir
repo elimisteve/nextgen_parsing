@@ -1,0 +1,8 @@
+⟪name="main",kind=package,scope=package,value=?⟫
+import "fmt"
+⟪name="main",kind=function,scope=subroutin,value=??,number-of-formals=0,formals=❲❳⟫,
+     fmt.Printf("Hello World channel=%d i=%d\n", 
+       ⟪name="ch",kind=channel,scope=global,value=5⟫,
+       ⟪name="i",kind=int,scope=s1,value=42⟫)
+
+/**** this pass simply checks the usage of variables against

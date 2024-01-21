@@ -1,0 +1,35 @@
+package main
+import "fmt"
+func main()
+  ⎡ s1 ⎤
+     fmt.Printf("Hello World channel=%d i=%d\n", 
+       ⟪name="ch",kind=channel,scope=global,value=5⟫,
+       ⟪name="i",kind=int,scope=s1,value=42⟫)
+  ⎣ s1 ⎦
+
+
+
+
+/****
+ legend:
+
+   ⎡ s1 ⎤ - begin scope "s1"
+
+   ⎣ s1 ⎦ - end scope "s1"
+
+   ⟪name="ch",kind=channel,scope=global,value=5⟫ - data descriptor
+     replace ALL variables with data descriptors
+     
+****/
+
+/**** can we go further? ONLY gathering up symbol table stuff ... ****/
+⟪name="main",kind=package,scope=package,value=?⟫
+import "fmt"
+⟪name="main",kind=function,scope=subroutin,value=??,number-of-formals=0,formals=❲❳⟫,
+  ⎡ s1 ⎤
+     fmt.Printf("Hello World channel=%d i=%d\n", 
+       ⟪name="ch",kind=channel,scope=global,value=5⟫,
+       ⟪name="i",kind=int,scope=s1,value=42⟫)
+  ⎣ s1 ⎦
+
+/**** can this be parsed with OhmJS? Can we write rules - in the next pass - that do something with this stuff at the text-level ONLY??? Simple rewrites... ****/

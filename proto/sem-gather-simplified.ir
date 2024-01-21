@@ -1,0 +1,23 @@
+package main
+import "fmt"
+func main()
+  ⎡ s1 ⎤
+     fmt.Printf("Hello World channel=%d i=%d\n", 
+       ⟪name="ch",kind=channel,scope=global,value=5⟫,
+       ⟪name="i",kind=int,scope=s1,value=42⟫)
+  ⎣ s1 ⎦
+
+
+
+
+/****
+ legend:
+
+   ⎡ s1 ⎤ - begin scope "s1"
+
+   ⎣ s1 ⎦ - end scope "s1"
+
+   ⟪name="ch",kind=channel,scope=global,value=5⟫ - data descriptor
+     replace ALL variables with data descriptors
+     
+****/

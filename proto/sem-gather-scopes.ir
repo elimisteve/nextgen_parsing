@@ -1,0 +1,10 @@
+⎡ s0 ⎤
+  package main
+  import "fmt"
+  def ch 5
+  func main() {
+    ⎡ s1 ⎤
+      defint i 42
+       fmt.Printf("Hello World channel=%d i=%d\n", ch, i)
+    ⎣ s1 ⎦
+⎣ s0 ⎦
